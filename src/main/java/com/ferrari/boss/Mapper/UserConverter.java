@@ -6,13 +6,16 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserMapper
-{
+public class UserConverter extends AbstractConverter<UserDto, User> {
     final private ModelMapper mapper = new ModelMapper();
 
     @Override
-    public UserDto toDTO(User entity) { return mapper.map(entity, UserDto.class); }
+    public User toEntity(UserDto dto) {
+        return mapper.map(dto, User.class);
+    }
 
     @Override
-    public User toEntity(UserDto dto) { return mapper.map(dto, User.class);}
+    public UserDto toDTO(User entity) {
+        return mapper.map(entity, UserDto.class);
+    }
 }

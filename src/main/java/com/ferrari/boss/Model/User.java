@@ -17,8 +17,12 @@ public class User
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
+
     String name;
+
     String surname;
+
     String email;
+
     String password;
 }
