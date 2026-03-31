@@ -1,5 +1,6 @@
 package com.ferrari.boss.Model;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,18 +12,15 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "user" , schema ="ferrari")
-public class User
-{
+@Table(name = "dipartiimento", schema = "ferrari")
+public class Dipartimento {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idDipartimento;
 
-    private String name;
+    @Column(nullable = false, unique = true)
+    private String nomeReparto;
 
-    private String surname;
-
-    private String email;
-
-    private String password;
+    private String sedeGeografica;
 }

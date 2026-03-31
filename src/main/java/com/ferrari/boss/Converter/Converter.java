@@ -1,6 +1,4 @@
-package com.ferrari.boss.Mapper;
-
-import jakarta.persistence.Entity;
+package com.ferrari.boss.Converter;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.ferrari.boss.Service;
 
-import com.ferrari.boss.Mapper.Converter;
+import com.ferrari.boss.Converter.Converter;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public class AbstractService<ENTITY, DTO> implements ServiceDTO<DTO> {

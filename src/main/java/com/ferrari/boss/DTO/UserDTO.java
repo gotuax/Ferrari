@@ -1,6 +1,5 @@
-package com.ferrari.boss.Dto;
+package com.ferrari.boss.DTO;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserDto
+public class UserDTO
 {
     Integer id;
     String name;

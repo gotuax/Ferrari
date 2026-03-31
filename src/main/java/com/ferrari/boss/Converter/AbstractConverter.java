@@ -1,4 +1,4 @@
-package com.ferrari.boss.Mapper;
+package com.ferrari.boss.Converter;
 
 import java.util.ArrayList;
 import java.util.List;
